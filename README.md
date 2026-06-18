@@ -1,5 +1,11 @@
 # Arabic Name Transliterator
 
+[![Packagist Version](https://img.shields.io/packagist/v/ismail/arabic-name-translit.svg)](https://packagist.org/packages/ismail/arabic-name-translit)
+[![Tests](https://img.shields.io/github/actions/workflow/status/IsmailElbery/arabic-name-translit/tests.yml?branch=master&label=tests)](https://github.com/IsmailElbery/arabic-name-translit/actions/workflows/tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/ismail/arabic-name-translit.svg)](https://packagist.org/packages/ismail/arabic-name-translit)
+[![PHP Version](https://img.shields.io/packagist/php-v/ismail/arabic-name-translit.svg)](https://packagist.org/packages/ismail/arabic-name-translit)
+[![License](https://img.shields.io/packagist/l/ismail/arabic-name-translit.svg)](LICENSE)
+
 Transliterate Arabic personal names into Latin script — **the right way**.
 
 ```php
