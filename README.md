@@ -1,10 +1,10 @@
 # Arabic Name Transliterator
 
-[![Packagist Version](https://img.shields.io/packagist/v/ismail/arabic-name-translit.svg)](https://packagist.org/packages/ismail/arabic-name-translit)
+[![Packagist Version](https://img.shields.io/packagist/v/ismailelbery/arabic-name-translit.svg)](https://packagist.org/packages/ismailelbery/arabic-name-translit)
 [![Tests](https://img.shields.io/github/actions/workflow/status/IsmailElbery/arabic-name-translit/tests.yml?branch=master&label=tests)](https://github.com/IsmailElbery/arabic-name-translit/actions/workflows/tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/ismail/arabic-name-translit.svg)](https://packagist.org/packages/ismail/arabic-name-translit)
-[![PHP Version](https://img.shields.io/packagist/php-v/ismail/arabic-name-translit.svg)](https://packagist.org/packages/ismail/arabic-name-translit)
-[![License](https://img.shields.io/packagist/l/ismail/arabic-name-translit.svg)](LICENSE)
+[![Total Downloads](https://img.shields.io/packagist/dt/ismailelbery/arabic-name-translit.svg)](https://packagist.org/packages/ismailelbery/arabic-name-translit)
+[![PHP Version](https://img.shields.io/packagist/php-v/ismailelbery/arabic-name-translit.svg)](https://packagist.org/packages/ismailelbery/arabic-name-translit)
+[![License](https://img.shields.io/packagist/l/ismailelbery/arabic-name-translit.svg)](LICENSE)
 
 Transliterate Arabic personal names into Latin script — **the right way**.
 
@@ -22,7 +22,7 @@ A name is a phonetic token, never a semantic one. This package treats it that wa
 ## Installation
 
 ```bash
-composer require ismail/arabic-name-translit
+composer require ismailelbery/arabic-name-translit
 ```
 
 Requires PHP 8.1+. Laravel users get auto-discovery (service provider + facade) out of the box.

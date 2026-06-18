@@ -1,5 +1,5 @@
 {
-    "name": "ismail/arabic-name-translit",
+    "name": "ismailelbery/arabic-name-translit",
     "description": "Name-aware transliteration of Arabic personal names into Latin script — transliterates, never translates.",
     "type": "library",
     "keywords": ["arabic", "transliteration", "names", "icao", "doc9303", "laravel", "phonetic"],
