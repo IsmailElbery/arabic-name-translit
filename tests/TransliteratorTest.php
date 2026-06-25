@@ -65,4 +65,21 @@ final class TransliteratorTest extends TestCase
     {
         self::assertSame('', Transliterator::name('   '));
     }
+
+    /**
+     * Regression: names the rule engine used to mis-vowel, now curated.
+     */
+    public function test_curated_names_keep_their_vowels(): void
+    {
+        self::assertSame('Islam', Transliterator::name('اسلام'));
+        self::assertSame('Randa', Transliterator::name('رندا'));
+        self::assertSame('Fathi', Transliterator::name('فتحي'));
+    }
+
+    public function test_definite_article_names_are_caught(): void
+    {
+        self::assertSame('El-Sayed', Transliterator::name('السيد'));
+        // unknown ال-name still gets the article rendered (base stays phonetic)
+        self::assertStringStartsWith('Al-', Transliterator::name('الحلبي'));
+    }
 }

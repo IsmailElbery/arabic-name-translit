@@ -62,4 +62,21 @@ final class CompoundResolverTest extends TestCase
         self::assertNotNull($out);
         self::assertStringStartsWith('Ali ', $out);
     }
+
+    public function test_leading_definite_article_is_rendered_common(): void
+    {
+        // السعيد = ال + سعيد (known -> Saeed). Article renders as "Al-".
+        self::assertSame('Al-Saeed', $this->resolver->resolve('السعيد', $this->common()));
+    }
+
+    public function test_leading_definite_article_egyptian_style(): void
+    {
+        self::assertSame('El-Saeed', $this->resolver->resolve('السعيد', $this->common('egyptian')));
+    }
+
+    public function test_leading_definite_article_icao(): void
+    {
+        // ICAO renders the article as "AL", joined without separators.
+        self::assertSame('ALSAEED', $this->resolver->resolve('السعيد', new IcaoStandard()));
+    }
 }

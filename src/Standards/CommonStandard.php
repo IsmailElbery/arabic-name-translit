@@ -51,8 +51,13 @@ final class CommonStandard implements StandardInterface
 
     public function definiteArticle(): string
     {
-        // Common readings drop the article when joining compounds.
-        return '';
+        // Render the leading article ال on a name, e.g. السيد -> "Al-Sayed"
+        // (default) or "El-Sayed" (egyptian). Configurable per style.
+        $articles = $this->config['common_article'] ?? ['default' => 'Al-'];
+
+        return $articles[$this->style ?? 'default']
+            ?? $articles['default']
+            ?? 'Al-';
     }
 
     public function joinCompound(array $parts): string

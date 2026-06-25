@@ -67,6 +67,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Definite article ال rendering (common standard)
+    |--------------------------------------------------------------------------
+    | How a leading ال on a name renders under the common standard, per style.
+    | e.g. السيد -> "Al-Sayed" (default) or "El-Sayed" (egyptian).
+    | Set a value to '' to drop the article entirely.
+    | ICAO always renders the article as "AL" (Doc 9303), regardless of this.
+    */
+    'common_article' => [
+        'default'  => 'Al-',
+        'egyptian' => 'El-',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Normalize alif maqsura (ى -> ي)
     |--------------------------------------------------------------------------
     | Some names legitimately end in ى. Disable to preserve it.
